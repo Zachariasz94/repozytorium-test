@@ -121,9 +121,13 @@ figure {
 } */
 .header {
   border-bottom: 1px solid #ECECEC;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 .header .header__position {
-  min-height: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,6 +281,7 @@ figure {
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 .header__logo-first-word {
   color: #2196F3;

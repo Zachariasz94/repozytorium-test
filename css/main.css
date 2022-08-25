@@ -97,33 +97,15 @@ figure {
 }
 
  */
-/* .logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192em;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-
-    &__first-word {
-        color: #2196F3;
-        margin: 0;
-    }
-
-    &__second-word {
-        color: #000000;
-    }
-
-    &__third-word {
-        color: var(--FFF);
-    }
-} */
 .header {
   border-bottom: 1px solid #ECECEC;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 .header .header__position {
-  min-height: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,6 +259,7 @@ figure {
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 .header__logo-first-word {
   color: #2196F3;
@@ -287,10 +270,7 @@ figure {
 }
 .header__nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  gap: 46px;
+  gap: 60px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -359,6 +339,9 @@ figure {
   }
 }
 @media screen and (min-width: 769px) {
+  .header__nav {
+    gap: 46px;
+  }
   .header__contact {
     display: flex;
     gap: 30px;
@@ -972,12 +955,11 @@ textarea::placeholder {
   padding: 10px 0 0 0;
 }
 @media screen and (max-width: 479px) {
-  .lorem .lorem {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+  .lorem__icon {
+    width: auto;
+  }
+  .lorem__text {
+    width: auto;
   }
 }
 
