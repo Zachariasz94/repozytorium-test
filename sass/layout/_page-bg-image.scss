@@ -6,16 +6,15 @@
     text-align: center;
     justify-content: center;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background: rgba(47, 48, 58, 0.4);
     box-shadow: inset 50px 50px 50px 50px rgb(47 48 58 / 40%),
             inset 1600px 600px 50px 50px rgb(47 48 58 / 40%);
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 768px) {
     
         background-image: url(../images/image-main-bg/image-bg-mobile.jpg); 
-
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
         &__title-wrapper {          
             color: var(--FFF);  
             max-width: 400px;
@@ -31,9 +30,11 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
     .navigation-div {
         background-image: url(../images/image-main-bg/image-bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         &__title-wrapper {
             color: var(--FFF);
             max-width: 400px;        
@@ -48,11 +49,12 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .navigation-div {
         max-width: 1600px;
         height: 600px; 
         background-image: url(../images/image-main-bg/image-bg-desktop.jpg); 
+        
         &__title-wrapper {
             color: var(--FFF);
             width: 696px;
@@ -67,27 +69,3 @@
         }
     }
 }
-
-/* 
-        &__title-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 118px;
-        }
-    
-        &__name-style {
-            width: 696px;
-            height: 120px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.363em;
-            letter-spacing: 0.06em;
-            color: var(--FFF);
-            text-transform: uppercase;
-            text-align: center;
-        }
-        } */
