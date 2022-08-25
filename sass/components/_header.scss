@@ -165,17 +165,15 @@
 
     .mobile-social-network__style {
         text-decoration: none;
-        color: var(--blue);
-        display: inline-block;
-        padding-right: 10px;
+        color: var(--blue); 
+    }
 
+    .mobile-social-network__border-right {
+        display: inline-block;
+        padding-right: 10px;       
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 
-    .mobile-social-network_style:nth-child(2) {
-        padding-left: none;
-        border-right: none;
-    }
 
     &__logo {
         font-family: 'Raleway';
@@ -198,10 +196,7 @@
 
     &__nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        gap: 46px;
+        gap: 60px;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -277,7 +272,9 @@
         }
     }
     @media screen and (min-width: 769px) {
-        
+        &__nav {
+            gap: 46px;
+        }
         &__contact {
             display: flex;           
             gap: 30px;

@@ -158,6 +158,7 @@ textarea::placeholder {
     }
 
     &__style-font {
+        display: flex;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
