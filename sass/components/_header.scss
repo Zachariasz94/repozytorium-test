@@ -41,6 +41,7 @@
         cursor: pointer;
         border: none;
         outline: none;
+        color: var(--black);
         @media (min-width: 480px) {       
                 display: none;
             }
@@ -106,7 +107,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .mobile-menu__nav-active {
+    .mobile-menu__nav-style:focus,
+    .mobile-menu__nav-style:hover {
         color: var(--blue);
     }
 
