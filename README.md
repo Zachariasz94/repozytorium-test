@@ -2,4 +2,4 @@
 
 Adding methodology BEM and preprocessor SASS:
 
-https://olekpositive.github.io/goit-markup-hw-07/
+https://olekpositive.github.io/repozytorium-test/
