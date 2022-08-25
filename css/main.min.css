@@ -844,7 +844,7 @@ textarea::placeholder {
 }
 @media screen and (max-width: 479px) {
   .navigation-div {
-    background-image: url(../../../images/image-main-bg/image-bg-mobile.jpg);
+    background-image: url(../images/image-main-bg/image-bg-mobile.jpg);
   }
   .navigation-div__title-wrapper {
     color: var(--FFF);
@@ -860,7 +860,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .navigation-div {
-    background-image: url(../../../images/image-main-bg/image-bg-tablet.jpg);
+    background-image: url(../images/image-main-bg/image-bg-tablet.jpg);
   }
   .navigation-div__title-wrapper {
     color: var(--FFF);
@@ -877,7 +877,7 @@ textarea::placeholder {
   .navigation-div {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../../../images/image-main-bg/image-bg-desktop.jpg);
+    background-image: url(../images/image-main-bg/image-bg-desktop.jpg);
   }
   .navigation-div__title-wrapper {
     color: var(--FFF);

@@ -14,7 +14,7 @@
             inset 1600px 600px 50px 50px rgb(47 48 58 / 40%);
     @media screen and (max-width: 479px) {
     
-        background-image: url(../../../images/image-main-bg/image-bg-mobile.jpg); 
+        background-image: url(../images/image-main-bg/image-bg-mobile.jpg); 
 
         &__title-wrapper {          
             color: var(--FFF);  
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .navigation-div {
-        background-image: url(../../../images/image-main-bg/image-bg-tablet.jpg);
+        background-image: url(../images/image-main-bg/image-bg-tablet.jpg);
         &__title-wrapper {
             color: var(--FFF);
             max-width: 400px;        
@@ -52,7 +52,7 @@
     .navigation-div {
         max-width: 1600px;
         height: 600px; 
-        background-image: url(../../../images/image-main-bg/image-bg-desktop.jpg); 
+        background-image: url(../images/image-main-bg/image-bg-desktop.jpg); 
         &__title-wrapper {
             color: var(--FFF);
             width: 696px;
