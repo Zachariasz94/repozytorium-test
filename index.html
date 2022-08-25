@@ -52,27 +52,33 @@
                 </li>
             </ul>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
+                <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_toggle" ></use>
                 </svg>
             </button>
         </div>  
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                    <path fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
+                
+                <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
+              
             </button>
-        
             <ul class="mobile-menu">
-                <li><a href="" class="link">About</a></li>
-                <li><a href="" class="link">Products</a></li>
-                <li><a href="" class="link">Contacts</a></li>
-                <li><a href="" class="link">Career</a></li>
+                <li><a class="mobile-menu__nav-style mobile-menu__nav-active" href="index.html">Agencja</a></li>
+                <li><a class="mobile-menu__nav-style " href="portfolio.html">Portfolio</a></li>
+                <li><a class="mobile-menu__nav-style " href="#footer">Kontakt</a></li>           
+            </ul>
+            <ul class="mobile-contact">
+                <li><a class="mobile-contact__number" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-social-network">
+                <li><a class="mobile-social-network__style" href="#">Instagram</a></li>
+                <li><a class="mobile-social-network__style" href="#">Twitter</a></li>
+                <li><a class="mobile-social-network__style" href="#">Facebook</a></li>
+                <li><a class="mobile-social-network__style" href="#">LinkedIn</a></li>
             </ul>
         </div>
     </header>
@@ -109,7 +115,7 @@
 
     <!-- EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU----- -->
 
-   <!--  <main>
+    <!-- <main>
         <section>
             <div class="navigation-div container">
                 <h1 class="navigation-div__name-style">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
