@@ -8,10 +8,15 @@
 
     &-position {
         display: flex;
-        gap: 70px;
+        justify-content: center;
+        gap: 60px;
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
+        }
+        @media (min-width: 769px) and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
     }
     &__logo {
@@ -46,16 +51,14 @@
     &__padding {
         padding-top: 20px;
         @media (max-width: 1199px) {
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
     }
 
     &__padding1 {
         padding-top: 9px;
         @media (max-width: 1199px) {
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
     }
 
@@ -140,13 +143,16 @@
     }
     &__style {
         outline: none;
-        width: 100%;
+        width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media (max-width: 1199px) {
+            width: 100%;
+    }
     }
 
     &__style::placeholder {
@@ -181,7 +187,6 @@
         align-items: center;
         gap: 24px;
         @media (max-width: 1199px) {
-            
             align-items: center;
         }
     }
@@ -195,16 +200,6 @@
         transform: scale(1.05);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 15px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
