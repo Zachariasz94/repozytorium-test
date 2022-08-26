@@ -58,7 +58,7 @@ figure {
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 15px;
     margin-left: auto;
@@ -175,7 +175,7 @@ figure {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 0 48px 40px;
+  padding: 48px 50px 48px 40px;
   background-color: #fff;
   overflow: auto;
   transform: translateX(100%);
@@ -251,6 +251,7 @@ figure {
 .header .mobile-social-network {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   padding: 64px 0 0 0;
   gap: 10px;
   font-style: normal;
