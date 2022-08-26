@@ -5,27 +5,44 @@
     line-height: 1.166em;
     text-align: center;
     letter-spacing: 0.03em;
+    @media (max-width: 1199px) {
+        font-size: 28px;
+    }
 }
 
 .box-our-customers {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 0;
     padding: 50px 0 0 0;
     gap: 30px;
-
+    @media (max-width: 1199px) {
+        padding: 30px 0 0 0;
+        flex-wrap: wrap;
+        
+    }
     &__logo {
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        width: 170px;
+        box-sizing: border-box;
+        flex-basis: calc(100% / 2);
+       
         height: 92px;
         cursor: pointer;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);           
+        @media (max-width: 768px) {
+            width: 210px;
+        }
+        @media (min-width: 769px) and (max-width: 1199px) {
+            width: 226px;
+        }
+        @media (min-width: 1200px) {
+            width: 170px;
+        }
     }
 
     &__logo:hover,
