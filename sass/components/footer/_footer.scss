@@ -9,5 +9,212 @@
     &-position {
         display: flex;
         gap: 70px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__logo {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192em;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        @media (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+            font-size: 24px; 
+        }
+    }
+
+    &__logo-first-word {
+        color: #2196F3;
+        margin: 0;
+    }
+
+    &__logo-second-word {
+        color: var(--FFF);
     }
 }
+.footer-contact {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+
+    &__padding {
+        padding-top: 20px;
+        @media (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__padding1 {
+        padding-top: 9px;
+        @media (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__adres {
+        text-decoration: none;
+        color: var(--FFF);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.174em;
+        letter-spacing: 0.03em;
+        line-height: 24px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__mail-tel {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.174em;
+        letter-spacing: 0.02em;
+        color: #FFFFFF99;
+        text-decoration: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.footer-join-us {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--FFF);
+    padding: 12px 0px 20px 0;
+    @media (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    &__icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__box {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__box:hover,
+    &__box:focus {
+        background: var(--blue);
+    }
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+    fill: var(--FFF);
+}
+.footer-join-us-newsletter {
+    display: flex;
+    gap: 10px;
+    @media (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    &__style {
+        outline: none;
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__style::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &__style--bg {
+        color: var(--FFF);
+        background-color: #2F303A;
+    }
+
+    &__button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        transition-duration: 250ms;
+        color: var(--FFF);
+        border-radius: 4px;
+        border: 0;
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+        padding: 10px 0 10px 42px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        @media (max-width: 1199px) {
+            
+            align-items: center;
+        }
+    }
+
+    &__button--bg {
+        background: #2196F3;
+    }
+
+    &__button:hover,
+    &__button:focus {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        
+    }
+} */

@@ -21,28 +21,32 @@
         flex-wrap: wrap;
         
     }
-    &__logo {
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        box-sizing: border-box;
-        flex-basis: calc(100% / 2);
-       
-        height: 92px;
-        cursor: pointer;
+    &__style {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);           
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+    flex-basis: calc(100% / 2);
         @media (max-width: 768px) {
-            width: 210px;
+            width: 100%;
         }
+    
         @media (min-width: 769px) and (max-width: 1199px) {
             width: 226px;
         }
+    
         @media (min-width: 1200px) {
             width: 170px;
         }
+    }
+    &__logo {
+        
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);           
     }
 
     &__logo:hover,
