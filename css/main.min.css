@@ -809,16 +809,6 @@ textarea::placeholder {
   border-radius: 10px;
 }
 
-/* @media screen and (min-width: 769px) and (max-width: 1199px) {
-    .container {
-
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-
-    }
-} */
 .navigation-div {
   width: 100%;
   height: 400px;
@@ -1181,14 +1171,14 @@ textarea::placeholder {
     width: 170px;
   }
 }
-.box-our-customers__logo {
+.box-our-customers__style {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box-our-customers__logo:hover, .box-our-customers__logo:focus {
+.box-our-customers__style:hover, .box-our-customers__logo:focus {
   border: 1px solid #2196F3;
 }
-.box-our-customers__logo:hover .icon, .box-our-customers__logo:focus .icon {
+.box-our-customers__style:hover .icon, .box-our-customers__logo:focus .icon {
   fill: var(--blue);
 }
 

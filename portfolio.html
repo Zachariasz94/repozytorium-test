@@ -15,23 +15,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;708&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/portfolio.css/portfolio.min.css" />
+    <link rel="stylesheet" href="css/portfolio.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__position container">
-            <a class="logo" href="index.html">
-                <p class="logo__first-word">Web<span class="logo__second-word">Studio</span></p>
-            </a>
+    <header class="header container">
+        <a class="header__logo" href="index.html">
+            <p class="header__logo-first-word">Web<span class="header__logo-second-word">Studio</span></p>
+        </a>
+        <div class="header__position">
             <nav>
-                <ul class="header__nav">
+                <ul class="header__nav menu" id="wrapper">
                     <li><a class="header__nav-style header__nav-underline-hover" href="index.html">Agencja</a></li>
                     <li><a class="header__nav-style header__nav-underline-permanently header__nav-active" href="portfolio.html">Portfolio</a></li>
                     <li><a class="header__nav-style header__nav-underline-hover" href="#footer">Kontakt</a></li>
                 </ul>
             </nav>
-            <ul class="header__contact">
+            <ul class="header__contact menu">
                 <li>
                     <a class="header__contact-color" href="mailto:info@devstudio.com">
                         <svg class="icon" width="16" height="12">
@@ -47,22 +47,49 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_toggle"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu">
+                <li><a class="mobile-menu__nav-style" href="index.html">Agencja</a></li>
+                <li><a class="mobile-menu__nav-style " href="portfolio.html">Portfolio</a></li>
+                <li><a class="mobile-menu__nav-style " href="#footer">Kontakt</a></li>
+            </ul>
+            <ul class="mobile-contact">
+                <li><a class="mobile-contact__number" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-social-network">
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Instagram</a></li>
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Twitter</a></li>
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Facebook</a></li>
+                <li><a class="mobile-social-network__style" href="#">LinkedIn</a></li>
+            </ul>
         </div>
     </header>
 
-    <main>
+     <main>
         <section class="section">
             <div class="container">
                 <ul class="gallery-buttons">
-                    <li><button class="gallery-buttons__portfolio" type="button">Wszystkie</button></li>
-                    <li><button class="gallery-buttons__portfolio" type="button">Strony</button></li>
-                    <li><button class="gallery-buttons__portfolio" type="button">Aplikacje</button></li>
-                    <li><button class="gallery-buttons__portfolio" type="button">Dizajn</button></li>
-                    <li><button class="gallery-buttons__portfolio" type="button">Marketing</button></li>
+                    <li class="gallery-buttons__style"><button class="gallery-buttons__portfolio" type="button">Wszystkie</button></li>
+                    <li class="gallery-buttons__style"><button class="gallery-buttons__portfolio" type="button">Strony</button></li>
+                    <li class="gallery-buttons__style"><button class="gallery-buttons__portfolio" type="button">Aplikacje</button></li>
+                    <li class="gallery-buttons__style"><button class="gallery-buttons__portfolio" type="button">Dizajn</button></li>
+                    <li class="gallery-buttons__style"><button class="gallery-buttons__portfolio" type="button">Marketing</button></li>
                 </ul>
-            </div>
+            </div> 
 
-            <div class="container">
+        <!--   <div class="container">
                 <ul class="gallery-box">
                     <li class="gallery-box__item">
                         <div class="gallery-box__hover-overlay">
@@ -174,10 +201,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+    </main> 
 
-    <footer class="footer footer--bg" id="footer">
+<!--   <footer class="footer footer--bg" id="footer">
         <div class="footer-position container">
             <section>
                 <a class="logo" href="index.html">
@@ -246,7 +273,12 @@
                 </form>    
             </section>
         </div>
-    </footer>
+    </footer>-->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./mobile-menu.js"></script>
 
 </body>
 

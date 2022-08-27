@@ -45,19 +45,17 @@
             width: 170px;
         }
     }
-    &__logo {
-        
+    &__style {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);           
     }
-
-    &__logo:hover,
-    &__logo:focus {
+    &__style:hover,
+    &__logo:focus  {
         border: 1px solid #2196F3;
     }
 
-    &__logo:hover .icon,
-    &__logo:focus .icon {
+    &__style:hover .icon,
+    &__logo:focus  .icon {
         fill: var(--blue);
     }
 }
